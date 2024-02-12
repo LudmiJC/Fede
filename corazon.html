@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>FELIZ MES Y SAN VALENTIN UwU</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: black;
+    }
+
+    .heart-container {
+        position: relative;
+        margin-top: -75px;
+    }
+
+    .heart {
+        height: 150px;
+        width: 150px;
+        background: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        box-shadow: -20px 20px 150px #f2044f;
+        animation: palpitar 0.5s linear infinite alternate;
+    }
+
+    .contenido {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 250px;
+    }
+
+    h1 {
+        margin: 0 0 110px 0;
+        color: white;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    h2,
+    h3,
+    .texto {
+        color: white;
+        text-align: center;
+    }
+
+    @keyframes palpitar {
+        0% {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1.10);
+        }
+
+        80% {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1.0);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+        }
+    }
+
+    .heart::before {
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background: red;
+        right: 50%;
+        border-radius: 50%;
+        box-shadow: 20px 20px 150px #f2044f;
+    }
+
+    .heart::after {
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        background: red;
+        top: -50%;
+        border-radius: 50%;
+        box-shadow: 20px 20px 150px #f2044f;
+    }
+</style>
+
+<body>
+    <div class="heart-container">
+        <div class="heart"></div>
+    </div>
+    <div class="contenido">
+        <h1>Te Amo Fede</h1>
+        <h2>Feliz Mes y San Valentin :3</h2>
+        <h3>Amor</h3>
+        <h4 class="texto">Me alegra haberte conocido, tu forma de ser me cautivo, me siento muy amada y segura con vos.</h4>
+        <h4 class="texto">Estoy muy agradecida de que te hayas cruzado en mi camino, me gusta todo de vos.</h4>
+        <h4 class="texto">Espero que lo nuestro funcione para bien y dure lo que tenga que durar.</h4>
+    </div>
+</body>
+
+</html>    
